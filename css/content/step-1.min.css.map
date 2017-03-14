@@ -1,0 +1,1 @@
+{"version":3,"sources":["content/step-1.scss"],"names":[],"mappings":"AAAA,GACE,gBAAgB,AAChB,cAAe,CAChB","file":"step-1.min.css","sourcesContent":["h1{\r\n  font-weight: 700;\r\n  font-size: 35px;\r\n}"],"sourceRoot":"css-source"}

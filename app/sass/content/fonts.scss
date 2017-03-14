@@ -1,0 +1,9 @@
+@include font-face("Gotham",
+        "../fonts/GothamProRegular/GothamProRegular", normal,
+$file-formats:ttf eot woff);
+@include font-face("GothamProMedium",
+        "../fonts/GothamProMedium/GothamProMedium", normal,
+$file-formats:ttf eot woff);
+@include font-face("GothamProBold",
+        "../fonts/GothamProBold/GothamProBold", normal,
+$file-formats:ttf eot woff);

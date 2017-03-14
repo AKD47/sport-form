@@ -1,0 +1,54 @@
+{
+  "name": "fast-start",
+  "version": "1.0.0",
+  "description": "Набор включенных технологий: HTML, CSS, JS, Gulp, SCSS, PostCSS, JQuery, Bower",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.11.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp.spritesmith": "^6.3.0",
+    "imagemin-pngquant": "^5.0.0",
+    "postcss-assets": "^4.1.0",
+    "postcss-fixes": "^1.4.2",
+    "postcss-focus": "^1.0.0",
+    "postcss-font-magician": "^1.6.0",
+    "postcss-px-to-em": "^1.0.1",
+    "postcss-pxtorem": "^3.3.1",
+    "postcss-short": "^3.0.3",
+    "postcss-short-spacing": "^2.0.1",
+    "postcss-sorting": "^1.7.0",
+    "rimraf": "^2.6.1",
+    "stylefmt": "^5.1.2",
+    "stylelint-config-standard": "^15.0.1",
+    "yargs": "^6.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKD47/fast-start.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AKD47/fast-start/issues"
+  },
+  "homepage": "https://github.com/AKD47/fast-start#readme"
+}
