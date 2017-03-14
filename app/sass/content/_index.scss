@@ -5,7 +5,7 @@
   background-image: url(../img/home-bg.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  font-family: GothamProBold;
+  font-family: $GothamProBold;
   z-index: 0;
   background-position: center -115px;
 
@@ -40,7 +40,7 @@
     opacity: 0.70;
     font-size: 22px;
     line-height: 1.55;
-    font-family: GothamProMedium;
+    font-family: $GothamProMedium;
     width: 50%;
     margin-bottom: 90px;
   }
