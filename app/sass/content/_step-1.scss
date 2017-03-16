@@ -67,19 +67,18 @@ input[type=radio] {
   }
 }
 
-.step{
-
-}
 
 .step-1 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10%;
+  box-sizing: border-box;
   h1 {
     font-size: 35px;
     font-family: $GothamProBold;
     text-align: center;
-    margin-top: 105px;
+    margin-top: 24px;
     margin-bottom: 0;
     @include breakpoint(max-width 479px) {
       margin-top: 40px;
@@ -1035,7 +1034,7 @@ input[type=radio] {
 .step-9 {
   padding-top: 275px;
   margin-bottom: 50px;
-
+  padding-bottom: 10%;
   .wrap {
     display: flex;
     width: 65%;

@@ -3,7 +3,8 @@ $(document).ready(function () {
     //steps animation//
     $(document).on('click', '.next', function () {//скрол по клику к следующему шагу
         event.preventDefault();//убираем свойство ссылки по умолчанию
-        var scroll_el = jQuery(this).attr('href'),//переменная для ссылки переключения на следующий шаг
+        var scroll_el = $(this)/*.attr('href')*/,//переменная для ссылки переключения на следующий шаг
+            nextSection = $(this).closest('section').next().find('.wrap');
             box = $(this).closest('section').next('section.fly'),//находим следющую секцию с классом-идентификатором
             inputs = $(this).closest('section').find('input:checkbox:checked, input:radio:checked, input[type="text"]'),//находим в секции с кнопкой все нужные инпуты
             empty = true;//индикатор для переключения на следующий шаг (значение по умолчанию "true")
@@ -19,7 +20,7 @@ $(document).ready(function () {
         }
 
         if ($(scroll_el).length != 0 && empty) {//проверяем наличие кнопки и значение индикатора
-            $('html, body').animate({scrollTop: jQuery(scroll_el).offset().top - 70}, 1200);//скролим браузер до нужного шага
+            $('html, body').animate({scrollTop: nextSection.offset().top - 70}, 1200);//скролим браузер до нужного шага
             box.animate({right: "0"}, 1500);//показываем поле секции
         }
         return false;
