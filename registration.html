@@ -26,84 +26,87 @@
 
 <!-- end header.html-->
 
-<!-- start step-1.html-->
-<!--<form class="registration">-->
 <main class="registration">
     <form name="formRegistration" id="form-registration">
-        <section class="step-1" id="step-1">
 
-            <h1>Регистрация</h1>
+<!-- start step-1.html-->
+<!--<form class="registration">-->
+<!--<main class="registration">
+    <form name="formRegistration" id="form-registration">-->
 
-            <div class="wrap">
-                <div class="left">
-                    <div class="title">Выберите цель<span></span></div>
-                </div>
+<section class="step-1" id="step-1">
 
-                <div class="right area">
+    <h1>Регистрация</h1>
 
-                    <div class="item">
+    <div class="wrap">
+        <div class="left">
+            <div class="title">Выберите цель<span></span></div>
+        </div>
+
+        <div class="right area">
+
+            <div class="item">
                 <span class="input">
-                    <input type="radio" name="select-km" id="start" required value="start">
+                    <input type="radio" name="select-km" id="start" value="start">
                     <label for="start">НАЧАТЬ БЕГАТЬ</label>
-
 				</span>
-                    </div>
-                    <div class="item">
+            </div>
+            <div class="item">
                 <span class="input">
                     <input type="radio" id="10km" name="select-km" value="10km">
                     <label for="10km">10КМ</label>
 
                 </span>
-                    </div>
-                    <div class="item">
+            </div>
+            <div class="item">
                 <span class="input">
                     <input type="radio" id="21km" name="select-km" value="21km">
                     <label for="21km">21.1КМ</label>
                 </span>
-                    </div>
-                    <div class="item">
+            </div>
+            <div class="item">
                 <span class="input">
                     <input type="radio" id="42km" name="select-km" value="42km">
                     <label for="42km">42.2КМ</label>
                 </span>
-                    </div>
-
-                    <!--<select size="3" multiple name="hero[]">
-                        <option value="НАЧАТЬ БЕГАТЬ">НАЧАТЬ БЕГАТЬ</option>
-                        <option value="10КМ"></option>
-                        <option value="21.1КМ">21.1КМ</option>
-                        <option value="42.2КМ">42.2КМ</option>
-                    </select>-->
-
-                    <!--<a href="#">НАЧАТЬ БЕГАТЬ</a>
-                    <a href="#">10КМ</a>
-                    <a href="#">21.1КМ</a>
-                    <a href="#">42.2КМ</a>-->
-                </div>
             </div>
 
-            <div class="bottom">
-                <a href="#step-2" class="next active">Вперед</a>
-            </div>
-        </section>
+            <!--<select size="3" multiple name="hero[]">
+                <option value="НАЧАТЬ БЕГАТЬ">НАЧАТЬ БЕГАТЬ</option>
+                <option value="10КМ"></option>
+                <option value="21.1КМ">21.1КМ</option>
+                <option value="42.2КМ">42.2КМ</option>
+            </select>-->
+
+            <!--<a href="#">НАЧАТЬ БЕГАТЬ</a>
+            <a href="#">10КМ</a>
+            <a href="#">21.1КМ</a>
+            <a href="#">42.2КМ</a>-->
+        </div>
+    </div>
+
+    <div class="bottom">
+        <a href="#step-2" class="next active">Вперед</a>
+    </div>
+</section>
 <!-- end step-1.html-->
 
 <!-- start step-2.html-->
 <!--<div class="selections-steps">-->
-<section class="step-2 step fly fly-1">
+<section class="step-2 fly">
 
     <div class="wrap" id="step-2">
         <div class="title">Тип тренировок<span></span></div>
         <div class="right area">
             <div class="item one">
                 <span class="input">
-                    <input type="radio" name="type" id="individuals" required>
+                    <input type="radio" name="type" id="individuals" value="individuals" required>
                     <label for="individuals" class="individuals">ИНДИВИДУАЛЬНЫЕ</label>
 				</span>
             </div>
             <div class="item group">
                 <span class="input">
-                    <input type="radio" name="type" id="group">
+                    <input type="radio" name="type" id="group" value="group">
                     <label for="group" class="group">ГРУППОВЫЕ</label>
                 </span>
             </div>
@@ -120,7 +123,7 @@
 
 <!-- start step-3.html-->
 <!--<div class="select one-step ">-->
-<section class="step-3 fly fly-2">
+<section class="step-3 fly">
 
     <div class="wrap" id="step-3">
         <div class="left">
@@ -144,31 +147,31 @@
             <div class="item">
                 <span class="input">
                     <label for="sr">Ср</label>
-                    <input type="checkbox" id="sr" name="day">
+                    <input type="checkbox" id="sr" name="day" value="sr">
                 </span>
             </div>
             <div class="item">
                 <span class="input">
                     <label for="cht">Чт</label>
-                    <input type="checkbox" id="cht" name="day">
+                    <input type="checkbox" id="cht" name="day" value="cht">
                 </span>
             </div>
             <div class="item">
                 <span class="input">
                     <label for="pt">Пт</label>
-                    <input type="checkbox" id="pt" name="day">
+                    <input type="checkbox" id="pt" name="day" value="pt">
                 </span>
             </div>
             <div class="item">
                 <span class="input">
                     <label for="sb">Сб</label>
-                    <input type="checkbox" id="sb" name="day">
+                    <input type="checkbox" id="sb" name="day" value="sb">
                 </span>
             </div>
             <div class="item">
                 <span class="input">
                     <label for="vs">Вс</label>
-                    <input type="checkbox" id="vs" name="day">
+                    <input type="checkbox" id="vs" name="day" value="vs">
                 </span>
             </div>
         </div>
@@ -182,7 +185,7 @@
 <!-- end step-3.html-->
 
 <!-- start step-4.html-->
-<section class="step-4 fly fly-it-4">
+<section class="step-4 fly">
 
     <div class="wrap" id="step-4">
         <div class="left">
@@ -192,37 +195,37 @@
         <div class="right area">
             <div class="item">
                 <span class="input">
-                    <input type="radio" id="time7" name="time" required>
+                    <input type="radio" id="time7" name="time" required value="time7">
                     <label for="time7">7:00</label>
 				</span>
             </div>
             <div class="item">
                 <span class="input">
-                    <input type="radio" id="time9" name="time">
+                    <input type="radio" id="time9" name="time" value="time9">
                     <label for="time9">9:00</label>
                 </span>
             </div>
             <div class="item">
                 <span class="input">
-                    <input type="radio" id="time12" name="time">
+                    <input type="radio" id="time12" name="time" value="time12">
                     <label for="time12">12:00</label>
                 </span>
             </div>
             <div class="item">
                 <span class="input">
-                    <input type="radio" id="time15" name="time">
+                    <input type="radio" id="time15" name="time" value="time15">
                     <label for="time15">15:00</label>
                 </span>
             </div>
             <div class="item">
                 <span class="input">
-                    <input type="radio" id="time18" name="time">
+                    <input type="radio" id="time18" name="time" value="time18">
                     <label for="time18">18:00</label>
                 </span>
             </div>
             <div class="item">
                 <span class="input">
-                    <input type="radio" id="time20" name="time">
+                    <input type="radio" id="time20" name="time" value="time20">
                     <label for="time20">20:00</label>
                 </span>
             </div>
@@ -231,15 +234,15 @@
 
     <div class="bottom">
         <a href="#step-3" class="prev">Назад</a>
-        <a href="#select" class="next active">Вперед</a>
+        <a href="#step-5" class="next active">Вперед</a>
     </div>
 </section>
 <!-- end step-4.html-->
 
 <!-- start step-5.html-->
-<section class="step-6 treners fly fly-it-6">
+<section class="step-6 treners fly">
 
-    <div class="wrap" id="select">
+    <div class="wrap" id="step-5">
         <div class="left">
             <div class="title">Выбери тренера<span></span></div>
         </div>
@@ -248,7 +251,7 @@
 
             <div class="trener-avatar">
                 <span class="input">
-                    <input type="radio" name="treners" id="trener1" required>
+                    <input type="radio" name="treners" id="trener1" value="trener1">
                     <label for="trener1">
                         <img src="img/steps/ava-1.jpeg" alt="">
                     </label>
@@ -256,7 +259,7 @@
             </div>
             <div class="trener-avatar">
                 <span class="input">
-                    <input type="radio" name="treners" id="trener2">
+                    <input type="radio" name="treners" id="trener2" value="trener2">
                     <label for="trener2">
                         <img for="trener2" src="img/steps/ava-2.jpg" alt="">
                     </label>
@@ -264,7 +267,7 @@
             </div>
             <div class="trener-avatar">
                 <span class="input">
-                    <input type="radio" name="treners" id="trener3">
+                    <input type="radio" name="treners" id="trener3" value="trener3">
                     <label for="trener3">
                         <img src="img/steps/ava-1.jpeg" alt="">
                     </label>
@@ -272,7 +275,7 @@
             </div>
             <div class="trener-avatar">
                 <span class="input">
-                    <input type="radio" name="treners" id="trener4">
+                    <input type="radio" name="treners" id="trener4" value="trener4">
                     <label for="trener4">
                         <img src="img/steps/ava-1.jpeg" alt="">
                     </label>
@@ -280,7 +283,7 @@
             </div>
             <div class="trener-avatar">
                 <span class="input">
-                    <input type="radio" name="treners" id="trener5">
+                    <input type="radio" name="treners" id="trener5" value="trener5">
                     <label for="trener5">
                         <img src="img/steps/ava-1.jpeg" alt="">
                     </label>
@@ -288,7 +291,7 @@
             </div>
             <div class="trener-avatar">
                 <span class="input">
-                    <input type="radio" name="treners" id="trener6">
+                    <input type="radio" name="treners" id="trener6" value="trener6">
                     <label for="trener6">
                         <img src="img/steps/ava-1.jpeg" alt="">
                     </label>
@@ -296,7 +299,7 @@
             </div>
             <div class="trener-avatar">
                 <span class="input">
-                    <input type="radio" name="treners" id="trener7">
+                    <input type="radio" name="treners" id="trener7" value="trener7">
                     <label for="trener7">
                         <img src="img/steps/ava-1.jpeg" alt="">
                     </label>
@@ -304,7 +307,7 @@
             </div>
             <div class="trener-avatar">
                 <span class="input">
-                    <input type="radio" name="treners" id="trener8">
+                    <input type="radio" name="treners" id="trener8" value="trener8">
                     <label for="trener8"></label>
                 </span>
             </div>
@@ -313,22 +316,22 @@
 
     <div class="bottom">
         <a href="#step-4" class="prev">Назад</a>
-        <a href="#step-7" class="next active">Вперед</a>
+        <a href="#step-6" class="next active">Вперед</a>
     </div>
 </section>
 <!-- end step-5.html-->
 
 <!-- start step-6.html-->
-<section class="step-5 metro fly fly-it-5">
+<section class="step-5 metro fly">
 
-    <div class="wrap" id="step-7">
+    <div class="wrap" id="step-6">
         <div class="left">
             <div class="title">Ближайшее метро<span></span></div>
         </div>
 
         <div class="right">
-            <input type="text" required>
-            <button>Ок!</button>
+            <input type="text" value="metro" required>
+           <!-- <button>Ок!</button>-->
         </div>
     </div>
 
@@ -339,240 +342,87 @@
 </section>
 </div>
 <!-- start group-steps.html-->
-<div class="select group-steps">
-    <section class="step-4 fly fly-it-4">
-
-        <div class="wrap" id="step-10">
-            <div class="left">
-                <div class="title">Количество месяцев<span></span></div>
-            </div>
-
-            <div class="right area">
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-1" name="month" required>
-                    <label for="month-1">1</label>
-				</span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-2" name="month">
-                    <label for="month-2">2</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-3" name="month">
-                    <label for="month-3">3</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-4" name="month">
-                    <label for="month-4">4</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-5" name="month">
-                    <label for="month-5">5</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-6" name="month">
-                    <label for="month-6">6</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-7" name="month" required>
-                    <label for="month-7">7</label>
-				</span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-8" name="month">
-                    <label for="month-8">8</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-9" name="month">
-                    <label for="month-9">9</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-10" name="month">
-                    <label for="month-10">10</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-11" name="month">
-                    <label for="month-11">11</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="month-12" name="month">
-                    <label for="month-12">12</label>
-                </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="bottom">
-            <a href="#step-2" class="prev">Назад</a>
-            <a href="#step-11" class="next active">Вперед</a>
-        </div>
-    </section>
-
-    <section class="step-4 fly fly-it-4">
-
-        <div class="wrap" id="step-11">
-            <div class="left">
-                <div class="title fade fade-it-4">Количество тренировок<span></span></div>
-            </div>
-
-            <div class="right area">
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="quantity-1" name="quantity" required>
-                    <label for="quantity-1">1</label>
-				</span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="quantity-2" name="quantity">
-                    <label for="quantity-2">2</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="quantity-3" name="quantity">
-                    <label for="quantity-3">3</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="quantity-5" name="quantity">
-                    <label for="quantity-5">5</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="quantity-10" name="quantity">
-                    <label for="quantity-10">10</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="quantity-20" name="quantity">
-                    <label for="quantity-20">20</label>
-                </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="bottom">
-            <a href="#step-10" class="prev">Назад</a>
-            <a href="#step-12" class="next active">Вперед</a>
-        </div>
-    </section>
-
-    <section class="step-4 fly fly-it-4">
-
-        <div class="wrap" id="step-12">
-            <div class="left">
-                <div class="title fade fade-it-4">Количество человек в группе<span></span></div>
-            </div>
-
-            <div class="right area">
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-1" name="persons" required>
-                    <label for="persons-1">1</label>
-				</span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-2" name="persons">
-                    <label for="persons-2">2</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-3" name="persons">
-                    <label for="persons-3">3</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-5" name="persons">
-                    <label for="persons-5">5</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-6" name="persons">
-                    <label for="persons-6">6</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-7" name="persons">
-                    <label for="persons-7">7</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-8" name="persons">
-                    <label for="persons-8">8</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-9" name="persons">
-                    <label for="persons-9">9</label>
-                </span>
-                </div>
-                <div class="item">
-                <span class="input">
-                    <input type="radio" id="persons-10" name="persons">
-                    <label for="persons-10">10</label>
-                </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="bottom">
-            <a href="#step-11" class="prev">Назад</a>
-            <a href="#step-7" class="next active">Вперед</a>
-        </div>
-    </section>
-</div>
-<!-- end group-steps.html-->
-<!-- end step-6.html-->
-
-<!-- start step-7.html-->
-<section class="step-7 online fly fly-it-7">
+<!--<div class="select group-steps">-->
+<section class="step-4 fly">
 
     <div class="wrap" id="step-7">
         <div class="left">
-            <div class="title">Online обучение<span></span></div>
+            <div class="title">Количество месяцев<span></span></div>
         </div>
 
         <div class="right area">
+            <div class="item">
                 <span class="input">
-                    <input type="radio" id="yes" name="online" required>
-                    <label for="yes">Да!</label>
+                    <input type="radio" id="month-1" name="month" value="month-1" required>
+                    <label for="month-1">1</label>
 				</span>
+            </div>
+            <div class="item">
                 <span class="input">
-                    <input type="radio" id="no" name="online">
-                    <label for="no">Нет</label>
+                    <input type="radio" id="month-2" value="month-2" name="month">
+                    <label for="month-2">2</label>
                 </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-3" value="month-3" name="month">
+                    <label for="month-3">3</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-4" value="month-4" name="month">
+                    <label for="month-4">4</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-5" value="month-5" name="month">
+                    <label for="month-5">5</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-6" value="month-6" name="month">
+                    <label for="month-6">6</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-7" value="month-7" name="month" required>
+                    <label for="month-7">7</label>
+				</span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-8" value="month-8" name="month">
+                    <label for="month-8">8</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-9" value="month-9" name="month">
+                    <label for="month-9">9</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-10" value="month-10" name="month">
+                    <label for="month-10">10</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-11" value="month-11" name="month">
+                    <label for="month-11">11</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="month-12" value="month-12" name="month">
+                    <label for="month-12">12</label>
+                </span>
+            </div>
         </div>
     </div>
 
@@ -581,12 +431,167 @@
         <a href="#step-8" class="next active">Вперед</a>
     </div>
 </section>
+
+<section class="step-4 fly">
+
+    <div class="wrap" id="step-8">
+        <div class="left">
+            <div class="title">Количество тренировок<span></span></div>
+        </div>
+
+        <div class="right area">
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="quantity-1" name="quantity" required>
+                    <label for="quantity-1">1</label>
+				</span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="quantity-2" name="quantity">
+                    <label for="quantity-2">2</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="quantity-3" name="quantity">
+                    <label for="quantity-3">3</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="quantity-5" name="quantity">
+                    <label for="quantity-5">5</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="quantity-10" name="quantity">
+                    <label for="quantity-10">10</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="quantity-20" name="quantity">
+                    <label for="quantity-20">20</label>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <a href="#step-7" class="prev">Назад</a>
+        <a href="#step-9" class="next active">Вперед</a>
+    </div>
+</section>
+
+<section class="step-4 fly">
+
+    <div class="wrap" id="step-9">
+        <div class="left">
+            <div class="title">Количество человек в группе<span></span></div>
+        </div>
+
+        <div class="right area">
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-1" name="persons" required>
+                    <label for="persons-1">1</label>
+				</span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-2" name="persons">
+                    <label for="persons-2">2</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-3" name="persons">
+                    <label for="persons-3">3</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-5" name="persons">
+                    <label for="persons-5">5</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-6" name="persons">
+                    <label for="persons-6">6</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-7" name="persons">
+                    <label for="persons-7">7</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-8" name="persons">
+                    <label for="persons-8">8</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-9" name="persons">
+                    <label for="persons-9">9</label>
+                </span>
+            </div>
+            <div class="item">
+                <span class="input">
+                    <input type="radio" id="persons-10" name="persons">
+                    <label for="persons-10">10</label>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <a href="#step-8" class="prev">Назад</a>
+        <a href="#step-10" class="next active">Вперед</a>
+    </div>
+</section>
+<!--
+</div>-->
+
+<!-- end group-steps.html-->
+<!-- end step-6.html-->
+
+<!-- start step-7.html-->
+<section class="step-7 online fly">
+
+    <div class="wrap" id="step-10">
+        <div class="left">
+            <div class="title">Online обучение<span></span></div>
+        </div>
+
+        <div class="right area">
+                <span class="input">
+                    <input type="radio" id="yes" name="online" value="yes" required>
+                    <label for="yes">Да!</label>
+				</span>
+                <span class="input">
+                    <input type="radio" id="no" value="no" name="online">
+                    <label for="no">Нет</label>
+                </span>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <a href="#step-9" class="prev">Назад</a>
+        <a href="#step-11" class="next active">Вперед</a>
+    </div>
+</section>
 <!-- end step-7.html-->
 
 <!-- start step-8.html-->
-<section class="step-8 online fly fly-it-8">
+<section class="step-8 online fly">
 
-    <div class="wrap" id="step-8">
+    <div class="wrap" id="step-11">
         <div class="left">
             <div class="title">Личные данные<span></span></div>
         </div>
@@ -604,16 +609,16 @@
     </div>
 
     <div class="bottom">
-        <a href="#step-7" class="prev">Назад</a>
-        <a href="#step-9" class="next active">Вперед</a>
+        <a href="#step-10" class="prev">Назад</a>
+        <a href="#step-12" class="next active">Вперед</a>
     </div>
 </section>
 <!-- end step-8.html-->
 
 <!-- start step-9.html-->
-<section class="step-9 fly fly-it-9">
+<section class="step-9 fly">
 
-    <div class="wrap" id="step-9">
+    <div class="wrap" id="step-12">
         <div class="left">
             <div class="title">Проверьте данные<span></span></div>
         </div>
@@ -626,16 +631,21 @@
         </div>
     </div>
     <div class="bottom">
-        <a href="#step-8" class="prev">Назад</a>
+        <a href="#step-11" class="prev">Назад</a>
         <!--<a href="#" class="next active">К ОПЛАТЕ 800</a>-->
         <input type="submit" class="submit" onclick='return valid(this.form)' value="К ОПЛАТЕ 800">
 
     </div>
 </section>
 
+<!--
 </form>
-</main>
+</main>-->
+
 <!-- end step-9.html-->
+
+    </form>
+</main>
 
 <!-- start footer.html-->
 <footer>

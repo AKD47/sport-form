@@ -68,7 +68,7 @@ input[type=radio] {
 }
 
 .step{
-  
+
 }
 
 .step-1 {
@@ -259,11 +259,15 @@ input[type=radio] {
     height: 45px;
     text-align: center;
     line-height: 42px;
+    transition: background-color 0.2s ease-in-out;
+    &:hover, &:active, &:focus{
+      color: #ffffff;
+      background-color: #a056a0;
+    }
   }
   a.active {
     border: 1px solid #000;
     border-radius: 30px;
-    color: #000;
     opacity: 1;
   }
 }
@@ -337,7 +341,6 @@ input[type=radio] {
           margin-right: auto;
           width: 100%;
         }
-
         &:last-child {
           .input {
             margin-right: 0;
@@ -366,7 +369,6 @@ input[type=radio] {
         display: inline-block;
         margin-top: 40px;
         margin-right: 39px;
-
         &:nth-child(2) {
           font-size: 15px;
         }
