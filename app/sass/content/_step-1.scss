@@ -14,6 +14,7 @@
   float: left;
   position: relative;
 }
+
 .input {
   overflow: hidden;
   color: #fff;
@@ -22,6 +23,7 @@
   @include transition(300ms);
   border-radius: 50px;
 }
+
 .input label {
   font-weight: 400;
   color: #fff;
@@ -36,9 +38,11 @@
   height: 53px;
   line-height: 45px;
 }
+
 .input:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
+
 .click-efect {
   position: absolute;
   top: 0;
@@ -46,6 +50,7 @@
   background: #a056a0;
   border-radius: 50%;
 }
+
 .input {
   label {
     margin-bottom: 0 !important;
@@ -60,6 +65,10 @@ input[type=radio] {
     background-color: #a056a0;
     margin-bottom: 0;
   }
+}
+
+.step{
+  
 }
 
 .step-1 {
@@ -240,7 +249,6 @@ input[type=radio] {
   margin-left: auto;
   width: 90%;
   margin-top: 140px;
-
   a {
     font-family: $GothamProMedium;
     font-size: 14px;
@@ -264,7 +272,6 @@ input[type=radio] {
   padding-top: 410px;
   position: relative;
   padding-bottom: 40px;
-
   .wrap {
     display: flex;
     width: 65%;
@@ -272,7 +279,6 @@ input[type=radio] {
     margin-right: auto;
     position: relative;
     padding-top: 110px;
-
     @include breakpoint(max-width 1250px) {
       width: 85%;
     }
@@ -281,7 +287,6 @@ input[type=radio] {
       @include flex-direction(column);
       padding-top: 30px;
     }
-
     .title {
       font-size: 25px;
       font-family: $GothamProBold;
@@ -294,12 +299,10 @@ input[type=radio] {
       @include justify-content(center);
       position: relative;
       text-align: center;
-
       @include breakpoint(max-width 767px) {
         margin-left: auto;
         margin-right: auto;
       }
-
       span {
         background-image: url(../img/steps/bg-2.png);
         background-repeat: no-repeat;
@@ -328,7 +331,6 @@ input[type=radio] {
         margin-left: auto;
         margin-right: auto;
       }
-
       .item {
         @include breakpoint(max-width 479px) {
           margin-left: auto;
@@ -342,7 +344,6 @@ input[type=radio] {
           }
         }
       }
-
       .input,
       .input label {
         width: 210px;
@@ -394,7 +395,6 @@ input[type=radio] {
         background: #a056a0;
         border-radius: 50%;
       }
-
       a {
         color: #ffffff;
         font-family: $GothamProBold;
@@ -408,7 +408,6 @@ input[type=radio] {
         transition: background-color 0.2s ease-in-out;
         font-size: 14px;
         margin-top: 40px;
-
         &:first-child {
           margin-right: 39px;
         }
@@ -427,14 +426,12 @@ input[type=radio] {
 .step-3 {
   padding-top: 410px;
   position: relative;
-
   .wrap {
     display: flex;
     width: 65%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 110px;
-
     @include breakpoint(max-width 1250px) {
       width: 90%;
     }
@@ -443,7 +440,6 @@ input[type=radio] {
       @include flex-direction(column);
       padding-top: 0;
     }
-
     .title {
       font-size: 25px;
       font-family: $GothamProBold;
@@ -456,7 +452,6 @@ input[type=radio] {
       justify-content: center;
       position: relative;
       text-align: center;
-
       span {
         background-image: url(../img/steps/bg-3.png);
         background-repeat: no-repeat;
@@ -472,7 +467,6 @@ input[type=radio] {
     }
     .left {
       width: 40%;
-
       @include breakpoint(max-width 767px) {
         margin-left: auto;
         margin-right: auto;
@@ -481,7 +475,6 @@ input[type=radio] {
     }
     .right {
       width: 55%;
-
       @include breakpoint(max-width 767px) {
         width: 80%;
         margin-left: auto;
@@ -490,7 +483,6 @@ input[type=radio] {
       @include breakpoint(max-width 479px) {
         width: 220px;
       }
-
       .input {
         font-family: $GothamProBold;
         font-size: 16px;
@@ -499,11 +491,9 @@ input[type=radio] {
         display: inline-block;
         margin-top: 20px;
         margin-right: 5px;
-
         input {
           display: none;
         }
-
         @include breakpoint(max-width 479px) {
           margin-right: 0;
         }
@@ -514,18 +504,15 @@ input[type=radio] {
 
 .step-4 {
   padding-top: 275px;
-
   .input label {
     line-height: 52px;
   }
-
   .wrap {
     display: flex;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 110px;
-
     @include breakpoint(max-width 767px) {
       @include display-flex(flex);
       @include flex-direction(column);
@@ -534,7 +521,6 @@ input[type=radio] {
     @include breakpoint(max-width 479px) {
       width: 85%;
     }
-
     .title {
       font-size: 25px;
       font-family: $GothamProBold;
@@ -547,7 +533,6 @@ input[type=radio] {
       justify-content: center;
       position: relative;
       text-align: center;
-
       span {
         background-image: url(../img/steps/bg-4.png);
         background-repeat: no-repeat;
@@ -564,7 +549,6 @@ input[type=radio] {
     }
     .left {
       width: 40%;
-
       @include breakpoint(max-width 767px) {
         margin-left: auto;
         margin-right: auto;
@@ -574,14 +558,12 @@ input[type=radio] {
     .right {
       width: 55%;
       margin-top: 50px;
-
       @include breakpoint(max-width 767px) {
         margin-top: 0;
         width: 92%;
         margin-left: auto;
         margin-right: auto;
       }
-
       .item {
         &:nth-child(2) {
           @include breakpoint(max-width 479px) {
@@ -599,7 +581,6 @@ input[type=radio] {
           }
         }
       }
-
       .input {
         font-family: $GothamProBold;
         font-size: 16px;
@@ -610,12 +591,10 @@ input[type=radio] {
         line-height: 52px;
         margin-top: 20px;
         margin-right: 5px;
-
         @include breakpoint(max-width 479px) {
           margin-right: 0;
         }
       }
-
       a {
         color: #ffffff;
         font-family: $GothamProBold;
@@ -630,7 +609,6 @@ input[type=radio] {
         transition: background-color 0.2s ease-in-out;
         margin-top: 20px;
         margin-right: 5px;
-
         &:hover {
           background-color: #a056a0;
         }
@@ -641,14 +619,12 @@ input[type=radio] {
 
 .step-5 {
   padding-top: 275px;
-
   .wrap {
     display: flex;
     width: 65%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 110px;
-
     @include breakpoint(max-width 1250px) {
       width: 90%;
     }
@@ -670,7 +646,6 @@ input[type=radio] {
       justify-content: center;
       position: relative;
       text-align: center;
-
       span {
         background-image: url(../img/steps/bg-5.png);
         background-repeat: no-repeat;
@@ -686,7 +661,6 @@ input[type=radio] {
     }
     .left {
       width: 40%;
-
       @include breakpoint(max-width 767px) {
         margin-left: auto;
         margin-right: auto;
@@ -698,20 +672,16 @@ input[type=radio] {
       margin-top: 50px;
       display: flex;
       flex-direction: column;
-
       @include breakpoint(max-width 767px) {
         width: 100%;
       }
-
       input {
         border: 2px solid #ababab;
         border-top: none;
         border-right: none;
         border-left: none;
         height: 40px;
-
       }
-
       button {
         color: #ffffff;
         font-family: $GothamProBold;
@@ -727,7 +697,6 @@ input[type=radio] {
         margin-top: 20px;
         margin-right: 5px;
         border: none;
-
         &:hover {
           background-color: #a056a0;
         }
@@ -849,14 +818,12 @@ input[type=radio] {
 
 .step-7 {
   padding-top: 275px;
-
   .wrap {
     display: flex;
     width: 65%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 110px;
-
     @include breakpoint(max-width 979px) {
       width: 90%;
     }
@@ -865,16 +832,13 @@ input[type=radio] {
       @include flex-direction(column);
       padding-top: 0;
     }
-
     .left {
       width: 40%;
-
       @include breakpoint(max-width 767px) {
         margin-left: auto;
         margin-right: auto;
         width: 220px;
       }
-
       .title {
         font-size: 25px;
         font-family: $GothamProBold;
@@ -887,7 +851,6 @@ input[type=radio] {
         justify-content: center;
         position: relative;
         text-align: center;
-
         span {
           background-image: url(../img/steps/bg-7.png);
           background-repeat: no-repeat;
@@ -903,12 +866,10 @@ input[type=radio] {
       }
     }
     .right {
-
       @include breakpoint(max-width 767px) {
         @include display-flex(flex);
         @include justify-content(center);
       }
-
       .input {
         font-family: $GothamProBold;
         font-size: 16px;
@@ -919,18 +880,15 @@ input[type=radio] {
         line-height: 52px;
         margin-top: 35px;
         margin-right: 10px;
-
         label {
           line-height: 51px;
         }
-
         &:last-child {
           @include breakpoint(max-width 767px) {
             margin-right: 0;
           }
         }
       }
-
       button {
         color: #ffffff;
         font-family: $GothamProBold;
@@ -946,7 +904,6 @@ input[type=radio] {
         margin-top: 35px;
         margin-right: 10px;
         border: none;
-
         &:hover {
           background-color: #42cc70;
         }
@@ -962,7 +919,6 @@ input[type=radio] {
 
 .step-8 {
   padding-top: 260px;
-
   @include breakpoint(max-width 767px) {
     @include display-flex(flex);
     @include flex-direction(column);
@@ -974,7 +930,6 @@ input[type=radio] {
     margin-left: auto;
     margin-right: auto;
     padding-top: 110px;
-
     @include breakpoint(max-width 979px) {
       width: 95%;
     }
@@ -983,17 +938,14 @@ input[type=radio] {
       @include flex-direction(column);
       padding-top: 50px;
     }
-
     .left {
       width: 35%;
-
       @include breakpoint(max-width 767px) {
         margin-left: auto;
         margin-right: auto;
         width: 220px;
         margin-bottom: 15px;
       }
-
       .title {
         font-size: 25px;
         font-family: $GothamProBold;
@@ -1006,7 +958,6 @@ input[type=radio] {
         justify-content: center;
         position: relative;
         text-align: center;
-
         span {
           background-image: url(../img/steps/bg-8.png);
           background-repeat: no-repeat;
@@ -1023,13 +974,11 @@ input[type=radio] {
     }
     .right {
       width: 50%;
-
       @include breakpoint(max-width 767px) {
         width: 100%;
-        @include display-flex(flex);     
+        @include display-flex(flex);
         @include justify-content(center);
       }
-
       .form {
         display: flex;
         flex-direction: column;
@@ -1037,14 +986,12 @@ input[type=radio] {
         box-shadow: 0px 8px 15px 5px rgba(5, 5, 5, 0.1);
         width: 410px;
         margin-left: 50px;
-
         @include breakpoint(max-width 767px) {
           margin: 0;
         }
         @include breakpoint(max-width 479px) {
           padding: 20px;
         }
-
         input {
           border: 2px solid #ababab;
           border-top: none;
@@ -1052,7 +999,7 @@ input[type=radio] {
           border-left: none;
           height: 40px;
           margin-top: 35px;
-          font-family: Gotham;
+          font-family: $GothamProMedium;
           font-size: 15px;
         }
         input[type=submit] {
@@ -1071,7 +1018,6 @@ input[type=radio] {
           margin-right: auto;
           margin-left: auto;
           border: none;
-
           &:hover {
             background-color: #a056a0;
           }
@@ -1168,13 +1114,14 @@ input[type=radio] {
   .bottom {
     text-align: center;
     margin-top: 60px;
+    a {
 
+    }
     a.active {
       width: 230px;
       font-size: 14px;
       font-family: $GothamProBold;
       transition: all 0.2s ease-in-out;
-
       &:hover {
         border-color: #7d53bd;
         background-color: #7d53bd;

@@ -29,70 +29,71 @@
 <!-- start step-1.html-->
 <!--<form class="registration">-->
 <main class="registration">
-<form name="formRegistration" id="form-registration">
-<section class="step-1" id="step-1">
+    <form name="formRegistration" id="form-registration">
+        <section class="step-1" id="step-1">
 
-    <h1>Регистрация</h1>
+            <h1>Регистрация</h1>
 
-    <div class="wrap">
-        <div class="left">
-            <div class="title">Выберите цель<span></span></div>
-        </div>
+            <div class="wrap">
+                <div class="left">
+                    <div class="title">Выберите цель<span></span></div>
+                </div>
 
-        <div class="right area">
+                <div class="right area">
 
-            <div class="item">
+                    <div class="item">
                 <span class="input">
                     <input type="radio" name="select-km" id="start" required value="start">
                     <label for="start">НАЧАТЬ БЕГАТЬ</label>
 
 				</span>
-            </div>
-            <div class="item">
+                    </div>
+                    <div class="item">
                 <span class="input">
                     <input type="radio" id="10km" name="select-km" value="10km">
                     <label for="10km">10КМ</label>
 
                 </span>
-            </div>
-            <div class="item">
+                    </div>
+                    <div class="item">
                 <span class="input">
                     <input type="radio" id="21km" name="select-km" value="21km">
                     <label for="21km">21.1КМ</label>
                 </span>
-            </div>
-            <div class="item">
+                    </div>
+                    <div class="item">
                 <span class="input">
                     <input type="radio" id="42km" name="select-km" value="42km">
                     <label for="42km">42.2КМ</label>
                 </span>
+                    </div>
+
+                    <!--<select size="3" multiple name="hero[]">
+                        <option value="НАЧАТЬ БЕГАТЬ">НАЧАТЬ БЕГАТЬ</option>
+                        <option value="10КМ"></option>
+                        <option value="21.1КМ">21.1КМ</option>
+                        <option value="42.2КМ">42.2КМ</option>
+                    </select>-->
+
+                    <!--<a href="#">НАЧАТЬ БЕГАТЬ</a>
+                    <a href="#">10КМ</a>
+                    <a href="#">21.1КМ</a>
+                    <a href="#">42.2КМ</a>-->
+                </div>
             </div>
 
-            <!--<select size="3" multiple name="hero[]">
-                <option value="НАЧАТЬ БЕГАТЬ">НАЧАТЬ БЕГАТЬ</option>
-                <option value="10КМ"></option>
-                <option value="21.1КМ">21.1КМ</option>
-                <option value="42.2КМ">42.2КМ</option>
-            </select>-->
-
-            <!--<a href="#">НАЧАТЬ БЕГАТЬ</a>
-            <a href="#">10КМ</a>
-            <a href="#">21.1КМ</a>
-            <a href="#">42.2КМ</a>-->
-        </div>
-    </div>
-
-    <div class="bottom">
-        <a href="#step-2" class="next active">Вперед</a>
-    </div>
-</section>
+            <div class="bottom">
+                <a href="#step-2" class="next active">Вперед</a>
+            </div>
+        </section>
 <!-- end step-1.html-->
+
 <!-- start step-2.html-->
-<div class="selections-steps">
-<section class="step-2" id="fly-it">
+<!--<div class="selections-steps">-->
+<section class="step-2 step fly fly-1">
 
     <div class="wrap" id="step-2">
-        <div class="title" id="fade-it">Тип тренировок<span></span></div>
+        <div class="title">Тип тренировок<span></span></div>
         <div class="right area">
             <div class="item one">
                 <span class="input">
@@ -118,12 +119,12 @@
 <!-- end step-2.html-->
 
 <!-- start step-3.html-->
-<div class="select one-step ">
-<section class="step-3" id="fly-it-3">
+<!--<div class="select one-step ">-->
+<section class="step-3 fly fly-2">
 
     <div class="wrap" id="step-3">
         <div class="left">
-            <div class="title" id="fade-it-3">День недели<span></span></div>
+            <div class="title">День недели<span></span></div>
         </div>
 
         <div class="right">
@@ -179,12 +180,13 @@
     </div>
 </section>
 <!-- end step-3.html-->
+
 <!-- start step-4.html-->
-<section class="step-4" id="fly-it-4">
+<section class="step-4 fly fly-it-4">
 
     <div class="wrap" id="step-4">
         <div class="left">
-            <div class="title" id="fade-it-4">Время<span></span></div>
+            <div class="title">Время<span></span></div>
         </div>
 
         <div class="right area">
@@ -229,16 +231,17 @@
 
     <div class="bottom">
         <a href="#step-3" class="prev">Назад</a>
-        <a href="#step-5" class="next active">Вперед</a>
+        <a href="#select" class="next active">Вперед</a>
     </div>
 </section>
 <!-- end step-4.html-->
-<!-- start step-5.html-->
-<section class="step-6 treners" id="fly-it-6">
 
-    <div class="wrap" id="step-5">
+<!-- start step-5.html-->
+<section class="step-6 treners fly fly-it-6">
+
+    <div class="wrap" id="select">
         <div class="left">
-            <div class="title" id="fade-it-6">Выбери тренера<span></span></div>
+            <div class="title">Выбери тренера<span></span></div>
         </div>
 
         <div class="right area">
@@ -310,16 +313,17 @@
 
     <div class="bottom">
         <a href="#step-4" class="prev">Назад</a>
-        <a href="#step-6" class="next active">Вперед</a>
+        <a href="#step-7" class="next active">Вперед</a>
     </div>
 </section>
 <!-- end step-5.html-->
-<!-- start step-6.html-->
-<section class="step-5 metro" id="fly-it-5">
 
-    <div class="wrap" id="step-6">
+<!-- start step-6.html-->
+<section class="step-5 metro fly fly-it-5">
+
+    <div class="wrap" id="step-7">
         <div class="left">
-            <div class="title" id="fade-it-5">Ближайшее метро<span></span></div>
+            <div class="title">Ближайшее метро<span></span></div>
         </div>
 
         <div class="right">
@@ -336,11 +340,11 @@
 </div>
 <!-- start group-steps.html-->
 <div class="select group-steps">
-    <section class="step-4" id="fly-it-4">
+    <section class="step-4 fly fly-it-4">
 
         <div class="wrap" id="step-10">
             <div class="left">
-                <div class="title" id="fade-it-4">Количество месяцев<span></span></div>
+                <div class="title">Количество месяцев<span></span></div>
             </div>
 
             <div class="right area">
@@ -425,11 +429,11 @@
         </div>
     </section>
 
-    <section class="step-4" id="fly-it-4">
+    <section class="step-4 fly fly-it-4">
 
         <div class="wrap" id="step-11">
             <div class="left">
-                <div class="title" id="fade-it-4">Количество тренировок<span></span></div>
+                <div class="title fade fade-it-4">Количество тренировок<span></span></div>
             </div>
 
             <div class="right area">
@@ -478,11 +482,11 @@
         </div>
     </section>
 
-    <section class="step-4" id="fly-it-4">
+    <section class="step-4 fly fly-it-4">
 
         <div class="wrap" id="step-12">
             <div class="left">
-                <div class="title" id="fade-it-4">Количество человек в группе<span></span></div>
+                <div class="title fade fade-it-4">Количество человек в группе<span></span></div>
             </div>
 
             <div class="right area">
@@ -551,12 +555,13 @@
 </div>
 <!-- end group-steps.html-->
 <!-- end step-6.html-->
+
 <!-- start step-7.html-->
-<section class="step-7 online" id="fly-it-7">
+<section class="step-7 online fly fly-it-7">
 
     <div class="wrap" id="step-7">
         <div class="left">
-            <div class="title" id="fade-it-7">Online обучение<span></span></div>
+            <div class="title">Online обучение<span></span></div>
         </div>
 
         <div class="right area">
@@ -577,12 +582,13 @@
     </div>
 </section>
 <!-- end step-7.html-->
-<!-- start step-8.html-->
-<section class="step-8 online" id="fly-it-8">
 
-    <div class="wrap">
-        <div class="left" id="step-8">
-            <div class="title" id="fade-it-8">Личные данные<span></span></div>
+<!-- start step-8.html-->
+<section class="step-8 online fly fly-it-8">
+
+    <div class="wrap" id="step-8">
+        <div class="left">
+            <div class="title">Личные данные<span></span></div>
         </div>
 
         <div class="right">
@@ -592,7 +598,6 @@
                 <input type="text" placeholder="Пароль" required>
                 <input type="text" placeholder="Имя" required>
                 <input type="text" placeholder="Фамилия" required>
-                <input placeholder="Ок!">
             </div>
             <!--</form>-->
         </div>
@@ -604,12 +609,13 @@
     </div>
 </section>
 <!-- end step-8.html-->
+
 <!-- start step-9.html-->
-<section class="step-9" id="fly-it-9">
+<section class="step-9 fly fly-it-9">
 
     <div class="wrap" id="step-9">
         <div class="left">
-            <div class="title" id="fade-it-9">Проверьте данные<span></span></div>
+            <div class="title">Проверьте данные<span></span></div>
         </div>
 
         <div class="right">
@@ -631,7 +637,6 @@
 </main>
 <!-- end step-9.html-->
 
-
 <!-- start footer.html-->
 <footer>
 
@@ -640,11 +645,11 @@
 
 <!-- start html_close.html-->
 </body>
-<script src="js/libs.min.js" type="text/javascript"></script>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="js/greensock/TweenMax.min.js" type="text/javascript"></script>
 <script src="js/jquery.superscrollorama.js" type="text/javascript"></script>
 <script src="js/jquery.validationEngine.js" type="text/javascript"></script>
 <script src="js/jquery.validationEngine-en.js" type="text/javascript"></script>
-<script src="js/script.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </html>
 <!-- end html_close.html-->
