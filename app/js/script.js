@@ -3,15 +3,20 @@ $(document).ready(function () {
     //steps animation//
     $(document).on('click', '.next', function () {//скрол по клику к следующему шагу
         event.preventDefault();//убираем свойство ссылки по умолчанию
-        var scroll_el = $(this)/*.attr('href')*/,//переменная для ссылки переключения на следующий шаг
-            nextSection = $(this).closest('section').next().find('.wrap');
+        var scroll_el = $(this),//переменная для ссылки переключения на следующий шаг
+            singleTrigger = $('#individuals:checked'),
+            singleTraining = $('#days-of-week, #time, #trainer'),
+            groupTrigger = $('#group:checked'),
+            groupTraining = $('#months, #num-of-tr, #mum-of-pers'),
+            nextSection = $(this).closest('section').next('section'),//переменная для следующей секции
+            nextWrap = $(this).closest('section').next().find('.wrap'),//находим следующий шаг
             box = $(this).closest('section').next('section.fly'),//находим следющую секцию с классом-идентификатором
             inputs = $(this).closest('section').find('input:checkbox:checked, input:radio:checked, input[type="text"]'),//находим в секции с кнопкой все нужные инпуты
             empty = true;//индикатор для переключения на следующий шаг (значение по умолчанию "true")
-
-        if(inputs.length > 0){//проверяем наличие в секции отмеченых инпутов
+        console.log(singleTrigger, singleTrigger);
+        if (inputs.length > 0) {//проверяем наличие в секции отмеченых инпутов
             $.each(inputs, function () {//при наличии в секции инпутов идем по ним
-                if(typeof $(this).val() == 'undefined' || $(this).val() == ''){//если инпут не отмечен или не заполнен
+                if (typeof $(this).val() == 'undefined' || $(this).val() == '') {//если инпут не отмечен или не заполнен
                     empty = false;//индикатор запрещает переключаться на другой шаг
                 }
             });
@@ -20,12 +25,29 @@ $(document).ready(function () {
         }
 
         if ($(scroll_el).length != 0 && empty) {//проверяем наличие кнопки и значение индикатора
-            $('html, body').animate({scrollTop: nextSection.offset().top - 70}, 1200);//скролим браузер до нужного шага
+            nextSection.show();
+            $('html, body').animate({scrollTop: nextWrap.offset().top - 70}, 1200);//скролим браузер до следующего шага           
             box.animate({right: "0"}, 1500);//показываем поле секции
         }
         return false;
     });
-   //close steps animation//
+
+    $(document).on('click', '.prev', function () {//скрол по клику к следующему шагу
+        event.preventDefault();//убираем свойство ссылки по умолчанию
+        var scroll_el = $(this),//переменная для ссылки переключения на следующий шаг
+            prevWrap = $(this).closest('section').prev().find('.wrap');//находим следующий шаг
+
+        if ($(scroll_el).length != 0) {//проверяем наличие кнопки и значение индикатора
+            $('html, body').animate({scrollTop: prevWrap.offset().top - 70}, 1200);//скролим браузер до следующего шага
+        }
+        return false;
+    });
+    //close steps animation//
+
+    /*select type of training*/
+
+
+    /*close select type of training*/
 
 
     $(document).on('click', '.input input[type="checkbox"], .input input[type="radio"]', function (e) {

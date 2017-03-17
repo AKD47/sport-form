@@ -67,13 +67,12 @@ input[type=radio] {
   }
 }
 
-
 .step-1 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10%;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
   h1 {
     font-size: 35px;
     font-family: $GothamProBold;
@@ -85,7 +84,7 @@ input[type=radio] {
     }
   }
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -259,10 +258,14 @@ input[type=radio] {
     text-align: center;
     line-height: 42px;
     transition: background-color 0.2s ease-in-out;
-    &:hover, &:active, &:focus{
+    &:hover, &:active, &:focus {
       color: #ffffff;
       background-color: #a056a0;
     }
+  }
+  a.prev{
+    border: 1px solid transparent;
+    border-radius: 30px;
   }
   a.active {
     border: 1px solid #000;
@@ -271,12 +274,16 @@ input[type=radio] {
   }
 }
 
+
+
 .step-2 {
+  display: none;
   padding-top: 410px;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 10%;
+  @include box-sizing(border-box);
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -425,10 +432,13 @@ input[type=radio] {
 }
 
 .step-3 {
+  display: none;
   padding-top: 410px;
   position: relative;
+  padding-bottom: 10%;
+  @include box-sizing(border-box);
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -448,7 +458,7 @@ input[type=radio] {
       height: 144px;
       background-size: 140px;
       background-position: center top;
-      display: flex;
+      @include display-flex(flex);
       flex-direction: column;
       justify-content: center;
       position: relative;
@@ -504,12 +514,15 @@ input[type=radio] {
 }
 
 .step-4 {
+  display: none;
   padding-top: 275px;
+  padding-bottom: 10%;
+  @include box-sizing(border-box);
   .input label {
     line-height: 52px;
   }
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -529,7 +542,7 @@ input[type=radio] {
       height: 144px;
       background-size: 140px;
       background-position: center top;
-      display: flex;
+      @include display-flex(flex);
       flex-direction: column;
       justify-content: center;
       position: relative;
@@ -619,9 +632,12 @@ input[type=radio] {
 }
 
 .step-5 {
+  display: none;
   padding-top: 275px;
+  padding-bottom: 10%;
+  @include box-sizing(border-box);
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -642,7 +658,7 @@ input[type=radio] {
       height: 144px;
       background-size: 140px;
       background-position: center top;
-      display: flex;
+      @include display-flex(flex);
       flex-direction: column;
       justify-content: center;
       position: relative;
@@ -671,7 +687,7 @@ input[type=radio] {
     .right {
       width: 45%;
       margin-top: 50px;
-      display: flex;
+      @include display-flex(flex);
       flex-direction: column;
       @include breakpoint(max-width 767px) {
         width: 100%;
@@ -707,10 +723,12 @@ input[type=radio] {
 }
 
 .step-6 {
+  display: none;
   padding-top: 275px;
-
+  padding-bottom: 10%;
+  @include box-sizing(border-box);
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -742,7 +760,7 @@ input[type=radio] {
         height: 144px;
         background-size: 140px;
         background-position: center top;
-        display: flex;
+        @include display-flex(flex);
         flex-direction: column;
         justify-content: center;
         position: relative;
@@ -818,9 +836,12 @@ input[type=radio] {
 }
 
 .step-7 {
+  display: none;
   padding-top: 275px;
+  padding-bottom: 10%;
+  @include box-sizing(border-box);
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -847,7 +868,7 @@ input[type=radio] {
         height: 144px;
         background-size: 140px;
         background-position: center top;
-        display: flex;
+        @include display-flex(flex);
         flex-direction: column;
         justify-content: center;
         position: relative;
@@ -919,14 +940,16 @@ input[type=radio] {
 }
 
 .step-8 {
+  display: none;
   padding-top: 260px;
+  padding-bottom: 10%;
+  @include box-sizing(border-box);
   @include breakpoint(max-width 767px) {
     @include display-flex(flex);
     @include flex-direction(column);
   }
-
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -954,7 +977,7 @@ input[type=radio] {
         height: 144px;
         background-size: 140px;
         background-position: center top;
-        display: flex;
+        @include display-flex(flex);
         flex-direction: column;
         justify-content: center;
         position: relative;
@@ -981,7 +1004,7 @@ input[type=radio] {
         @include justify-content(center);
       }
       .form {
-        display: flex;
+        @include display-flex(flex);
         flex-direction: column;
         padding: 50px 60px;
         box-shadow: 0px 8px 15px 5px rgba(5, 5, 5, 0.1);
@@ -1032,11 +1055,13 @@ input[type=radio] {
 }
 
 .step-9 {
+  display: none;
   padding-top: 275px;
   margin-bottom: 50px;
   padding-bottom: 10%;
+  @include box-sizing(border-box);
   .wrap {
-    display: flex;
+    @include display-flex(flex);
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -1071,7 +1096,7 @@ input[type=radio] {
         height: 150px;
         background-size: 140px;
         background-position: center top;
-        display: flex;
+        @include display-flex(flex);
         flex-direction: column;
         justify-content: center;
         position: relative;
