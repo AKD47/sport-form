@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-   /* var training;*/
+    /* var training;*/
     /*select type of training*/
     $(document).on('click', '.individuals', function () {
         $(this).addClass('open');
@@ -18,26 +18,41 @@ $(document).ready(function () {
     $(document).on('click', '.next', function () {//скрол по клику к следующему шагу
         event.preventDefault();//убираем свойство ссылки по умолчанию
         var scroll_el = $(this),//переменная для ссылки переключения на следующий шаг
+            sectionTitle = $(this).closest('section').find('.title').text(),
+            selectedValues = [],
             nextSection = $(this).closest('section').next('section'),//переменная для следующей секции
             nextWrap = $(this).closest('section').next().find('.wrap'),//находим следующий шаг
             box = $(this).closest('section').next('section.fly'),//находим следющую секцию с классом-идентификатором
             inputs = $(this).closest('section').find('input:checkbox:checked, input:radio:checked, input[type="text"]'),//находим в секции с кнопкой все нужные инпуты
             empty = true;//индикатор для переключения на следующий шаг (значение по умолчанию "true")
-                
+
         if (inputs.length > 0) {//проверяем наличие в секции отмеченых инпутов
             $.each(inputs, function () {//при наличии в секции инпутов идем по ним
                 if (typeof $(this).val() == 'undefined' || $(this).val() == '') {//если инпут не отмечен или не заполнен
                     empty = false;//индикатор запрещает переключаться на другой шаг
+                } else {
+                    if ($(this).next('label').text() != '') {
+                        selectedValues.push($(this).next('label').text());
+                    } else {
+                        selectedValues.push($(this).val());
+                    }
+                    /* selectedValues.push($(this).next('label').text());*/
                 }
+
             });
         } else {// если их нет,
             empty = false;//индикатор запрещает переключаться на другой шаг
         }
-        
-        if ($(scroll_el).length != 0 && empty) {//проверяем наличие кнопки и значение индикатора
-            nextSection.show();           
+
+        console.log(sectionTitle);
+        console.log(selectedValues);
+
+        if ($(scroll_el).length != 0 && empty) {//проверяем наличие кнопки и значение индикатора            
+            $('#total').find('.right').append('<div>' + sectionTitle + ': ' + selectedValues.join(', ') + '</div>');
+            nextSection.show();
             $('html, body').animate({scrollTop: nextWrap.offset().top - 70}, 1200);//скролим браузер до следующего шага           
             box.animate({right: "0"}, 1500);//показываем поле секции
+           /*  optionData();*/
         }
         return false;
     });
@@ -137,3 +152,24 @@ $(document).ready(function () {
     });
 
 });
+
+function optionData() {
+
+    var sectionTitle = $('.next').closest('section').find('.title').text(),       
+        selectedValues = [];
+
+    console.log(sectionTitle);    
+    console.log(selectedValues);
+
+    $('#total').find('.right').html('');
+
+    $.each('.data', function () {
+        if ($(inputs).next('label').text() != '') {
+            selectedValues.push($('.next').next('label').text());
+        } else {
+            selectedValues.push($(inputs).val());
+        }
+        $('#total').find('.right').append('<div>' + sectionTitle + ': ' + selectedValues.join(', ') + '</div>');
+    });
+}
+
