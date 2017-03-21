@@ -18,8 +18,8 @@ $(document).ready(function () {
     $(document).on('click', '.next', function () {//скрол по клику к следующему шагу
         event.preventDefault();//убираем свойство ссылки по умолчанию
         var scroll_el = $(this),//переменная для ссылки переключения на следующий шаг
-            sectionTitle = $(this).closest('section').find('.title').text(),
-            selectedValues = [],
+            /*sectionTitle = $(this).closest('section').find('.title').text(),
+            selectedValues = [],*/
             nextSection = $(this).closest('section').next('section'),//переменная для следующей секции
             nextWrap = $(this).closest('section').next().find('.wrap'),//находим следующий шаг
             box = $(this).closest('section').next('section.fly'),//находим следющую секцию с классом-идентификатором
@@ -31,11 +31,11 @@ $(document).ready(function () {
                 if (typeof $(this).val() == 'undefined' || $(this).val() == '') {//если инпут не отмечен или не заполнен
                     empty = false;//индикатор запрещает переключаться на другой шаг
                 } else {
-                    if ($(this).next('label').text() != '') {
+                    /*if ($(this).next('label').text() != '') {
                         selectedValues.push($(this).next('label').text());
                     } else {
                         selectedValues.push($(this).val());
-                    }
+                    }*/
                     /* selectedValues.push($(this).next('label').text());*/
                 }
 
@@ -44,15 +44,17 @@ $(document).ready(function () {
             empty = false;//индикатор запрещает переключаться на другой шаг
         }
 
-        console.log(sectionTitle);
-        console.log(selectedValues);
+        /*console.log(sectionTitle);
+        console.log(selectedValues);*/
 
         if ($(scroll_el).length != 0 && empty) {//проверяем наличие кнопки и значение индикатора            
+/*
             $('#total').find('.right').append('<div>' + sectionTitle + ': ' + selectedValues.join(', ') + '</div>');
+*/
             nextSection.show();
             $('html, body').animate({scrollTop: nextWrap.offset().top - 70}, 1200);//скролим браузер до следующего шага           
             box.animate({right: "0"}, 1500);//показываем поле секции
-           /*  optionData();*/
+            optionData();
         }
         return false;
     });
@@ -155,20 +157,29 @@ $(document).ready(function () {
 
 function optionData() {
 
-    var sectionTitle = $('.next').closest('section').find('.title').text(),       
-        selectedValues = [];
+    /*var sectionTitle = $('.next').closest('section').find('.title').text(),    */
+    /*var selectedValues = [];*/
 
-    console.log(sectionTitle);    
-    console.log(selectedValues);
-
+    var data = $('.data');
+    
     $('#total').find('.right').html('');
 
-    $.each('.data', function () {
-        if ($(inputs).next('label').text() != '') {
-            selectedValues.push($('.next').next('label').text());
-        } else {
-            selectedValues.push($(inputs).val());
-        }
+    $.each(data, function () {
+        var sectionTitle = $(this).find('.title').text(),
+            inputs = $(this).find('input:checkbox:checked, input:radio:checked, input[type="text"]'),//находим в секции с кнопкой все нужные инпуты
+            selectedValues = [];
+
+        $.each(inputs, function () {
+
+            if ($(this).next('label').text() != '') {
+                selectedValues.push($(this).next('label').text());
+            } else {
+                selectedValues.push($(this).val());
+            }           
+
+        });
+       /*console.log( sectionTitle );
+       console.log( selectedValues );*/
         $('#total').find('.right').append('<div>' + sectionTitle + ': ' + selectedValues.join(', ') + '</div>');
     });
 }
