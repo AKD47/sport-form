@@ -247,6 +247,11 @@ input[type=radio] {
   margin-left: auto;
   width: 90%;
   margin-top: 140px;
+  margin-bottom: 0;
+  @include breakpoint(max-width 670px){
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   a {
     font-family: $GothamProMedium;
     font-size: 14px;
@@ -282,6 +287,9 @@ input[type=radio] {
   position: relative;
   padding-bottom: 10%;
   @include box-sizing(border-box);
+  @include breakpoint(max-width 670px){
+    padding-top: 20%;
+  }
   .wrap {
     @include display-flex(flex);
     width: 65%;
@@ -437,6 +445,9 @@ input[type=radio] {
   position: relative;
   padding-bottom: 10%;
   @include box-sizing(border-box);
+  @include breakpoint(max-width 670px){
+    padding-top: 20%;
+  }
   .wrap {
     @include display-flex(flex);
     width: 65%;
@@ -518,6 +529,9 @@ input[type=radio] {
   padding-top: 275px;
   padding-bottom: 10%;
   @include box-sizing(border-box);
+  @include breakpoint(max-width 670px){
+    padding-top: 20%;
+  }
   .input label {
     line-height: 52px;
   }
@@ -636,6 +650,9 @@ input[type=radio] {
   padding-top: 275px;
   padding-bottom: 10%;
   @include box-sizing(border-box);
+  @include breakpoint(max-width 670px){
+    padding-top: 20%;
+  }
   .wrap {
     @include display-flex(flex);
     width: 65%;
@@ -727,6 +744,9 @@ input[type=radio] {
   padding-top: 275px;
   padding-bottom: 10%;
   @include box-sizing(border-box);
+  @include breakpoint(max-width 670px){
+    padding-top: 20%;
+  }
   .wrap {
     @include display-flex(flex);
     width: 65%;
@@ -840,6 +860,9 @@ input[type=radio] {
   padding-top: 275px;
   padding-bottom: 10%;
   @include box-sizing(border-box);
+  @include breakpoint(max-width 670px){
+    padding-top: 20%;
+  }
   .wrap {
     @include display-flex(flex);
     width: 65%;
@@ -947,6 +970,9 @@ input[type=radio] {
   @include breakpoint(max-width 767px) {
     @include display-flex(flex);
     @include flex-direction(column);
+  }
+  @include breakpoint(max-width 670px){
+    padding-top: 20%;
   }
   .wrap {
     @include display-flex(flex);
@@ -1077,7 +1103,7 @@ input[type=radio] {
     .left {
       width: 40%;
       @include breakpoint(max-width 979px) {
-        width: 55%;
+        width: 100%;
       }
       @include breakpoint(max-width 767px) {
         margin-left: auto;
@@ -1118,7 +1144,7 @@ input[type=radio] {
       padding-top: 5%;
       padding-bottom: 5%;
       @include breakpoint(max-width 979px) {
-        width: 50%;
+        width: 100%;
       }
       div {
         font-size: 18px;
