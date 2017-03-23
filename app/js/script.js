@@ -79,7 +79,6 @@ $(document).ready(function () {
         }
     });
 
-
     $(document).on('click', '.input', function (e) {
 
         $("label[type='checkbox']", this);
@@ -152,6 +151,34 @@ $(document).ready(function () {
             }
         }
     });
+
+    /*validation*/
+    if(document.getElementById('form-registration')){
+        var validation = new Validation();
+        validation.init({
+            /*event: 'onblur',*/
+            classItem: "valItem",//елемент, который нужно провалидировать
+            eventElement: '#form-registration-submit',//событие по клику кнопки 'Отправить'
+            items: [//масив объектов
+                {
+                    item: 'metro', tpl: 'kir+lat', tplMsg: ''
+                },
+                {
+                    item: 'psw', tpl: 'lat+number', tplMsg: ''
+                },
+                {
+                    item: 'email', tpl: 'email', tplMsg: ''
+                },
+                {
+                    item: 'name', tpl: 'kir+lat', tplMsg: ''
+                },
+                {
+                    item: 'surname', tpl: 'kir+lat', tplMsg: ''
+                }
+            ]            
+        });
+    }
+    /*close validation*/
 
 });
 

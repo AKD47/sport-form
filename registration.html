@@ -548,7 +548,7 @@
         </div>
 
         <div class="right">
-            <input type="text" value="metro" required>
+            <input class="valItem" type="text" value="metro" name="metro" data-tpl="kir+lat" required>
            <!-- <button>Ок!</button>-->
         </div>
     </div>
@@ -598,10 +598,10 @@
         <div class="right">
             <!--<form class="form">-->
             <div class="form">
-                <input type="text" placeholder="Email" required>
-                <input type="text" placeholder="Пароль" required>
-                <input type="text" placeholder="Имя" required>
-                <input type="text" placeholder="Фамилия" required>
+                <input class="valItem" type="text" placeholder="Email" name="email" data-tpl="email" required>
+                <input class="valItem" type="text" placeholder="Пароль" name="psw" data-tpl="lat+number" required>
+                <input class="valItem" type="text" placeholder="Имя" name="name" data-tpl="kir+lat" required>
+                <input class="valItem" type="text" placeholder="Фамилия" name="surname" data-tpl="kir+lat" required>
             </div>
             <!--</form>-->
         </div>
@@ -632,7 +632,7 @@
     <div class="bottom">
         <a href="#step-11" class="prev">Назад</a>
         <!--<a href="#" class="next active">К ОПЛАТЕ 800</a>-->
-        <input type="submit" class="submit" onclick='return valid(this.form)' value="К ОПЛАТЕ 800">
+        <input type="submit" id="form-registration-submit" class="submit" onclick='return valid(this.form)' value="К ОПЛАТЕ 800">
 
     </div>
 </section>
